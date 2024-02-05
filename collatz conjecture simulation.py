@@ -2,9 +2,11 @@ import numpy
 import matplotlib.pyplot as plt
 import json
 
-a = int(input("Enter the number for printing collatz conjecture:"))
+a = int(input("Enter the number till which you want the collatz conjecture:"))
 n = a
 storage = []
+
+
 
 if(n > 0):
     while True:
@@ -25,7 +27,7 @@ if(n > 0):
             with open('data.json', 'w') as file:
                 json.dump(storage_obj, file)
             break
-    False
+        False
 else:
     print("Input needs to be greater than 0.")
             
