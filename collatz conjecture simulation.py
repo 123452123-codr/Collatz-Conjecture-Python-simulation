@@ -24,8 +24,9 @@ if(n > 0):
             ypoints = numpy.array(storage)
             plt.plot(ypoints)
             plt.show()
+            actual_storage_obj = (storage_obj)
             with open('data.json', 'w') as file:
-                json.dump(storage_obj, file)
+                json.dump(actual_storage_obj,"\n", file)
             break
         False
 else:
