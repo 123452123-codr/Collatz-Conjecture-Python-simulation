@@ -26,7 +26,7 @@ if(n > 0):
             plt.show()
             actual_storage_obj = (storage_obj)
             with open('data.json', 'w') as file:
-                json.dump(actual_storage_obj,"\n", file)
+                json.dump(actual_storage_obj, file)
             break
         False
 else:
