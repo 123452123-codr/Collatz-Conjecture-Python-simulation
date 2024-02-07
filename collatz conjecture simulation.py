@@ -6,8 +6,6 @@ a = int(input("Enter the number till which you want the collatz conjecture:"))
 n = a
 storage = []
 
-
-
 if(n > 0):
     while True:
         storage_obj = {a : storage}
@@ -25,8 +23,10 @@ if(n > 0):
             plt.plot(ypoints)
             plt.show()
             actual_storage_obj = (storage_obj)
+            space = ""
             with open('data.json', 'w') as file:
                 json.dump(actual_storage_obj, file)
+                json.dump(space, file)
             break
         False
 else:
