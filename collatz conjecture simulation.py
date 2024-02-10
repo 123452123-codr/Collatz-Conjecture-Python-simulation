@@ -30,5 +30,4 @@ if(n > 0):
             break
         False
 else:
-    print("Input needs to be greater than 0.")
-            
+    print("Input needs to be greater than 0.")            

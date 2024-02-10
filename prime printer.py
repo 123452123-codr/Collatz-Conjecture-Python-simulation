@@ -15,6 +15,11 @@ for i in range(2,a+1,1):
         prime_set.append(i)
         prime_json = {a : prime_set}
         with open('prime_data.json', 'w') as file:
-            json.dump(prime_json, file)
+            for j in prime_json:
+                json.dump(prime_json, file, indent=2)
     else:
         waste = 1
+no_of_primes = len(prime_set)
+percent_primes = (no_of_primes/a) * 100
+print("There are {} primes between 1 and {} and their percentage is {}%".format(no_of_primes, a, percent_primes))
+    
